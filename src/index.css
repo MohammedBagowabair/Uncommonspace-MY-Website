@@ -5,9 +5,19 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 body { @apply bg-linen text-ink font-sans antialiased overflow-x-hidden; }
 ::selection { @apply bg-coral text-white; }
 img { max-width: 100%; height: auto; }
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.img-zoom { @apply overflow-hidden; }
+.img-zoom img { @apply transition duration-700 ease-out will-change-transform; }
+.img-zoom:hover img { transform: scale(1.06); }
+.glass-header {
+  background: rgba(26, 21, 32, 0.72);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
 .horizontal-scroll {
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
 }
-.horizontal-scroll::-webkit-scrollbar { height: 6px; }
+.horizontal-scroll::-webkit-scrollbar { height: 5px; }
 .horizontal-scroll::-webkit-scrollbar-thumb { background: #c0927a; border-radius: 3px; }
