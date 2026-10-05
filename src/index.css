@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html { scroll-behavior: smooth; }
-body { @apply bg-linen text-ink font-sans antialiased; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { @apply bg-linen text-ink font-sans antialiased overflow-x-hidden; }
 ::selection { @apply bg-coral text-white; }
+img { max-width: 100%; height: auto; }
+.horizontal-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
 .horizontal-scroll::-webkit-scrollbar { height: 6px; }
 .horizontal-scroll::-webkit-scrollbar-thumb { background: #c0927a; border-radius: 3px; }

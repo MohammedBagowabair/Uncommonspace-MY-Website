@@ -3,13 +3,14 @@ export const wa = '60107112235'
 export const maps = 'https://www.google.com/maps/place/uncommonspace+MY+(Interior+Design)/@3.2040334,101.7460038,17z'
 export const tiktok = 'https://www.tiktok.com/@uncommonspacedesign'
 export const pitchWa = 'https://wa.me/601151198497'
+export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
 export const projects = [
-  { titleEN: 'Wangsa Melawati Condo', titleMS: 'Kondominium Wangsa Melawati', typeEN: 'Small-space living', typeMS: 'Ruang kecil', img: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80' },
-  { titleEN: 'Raw Material Kitchen', titleMS: 'Dapur Bahan Mentah', typeEN: 'Material curation', typeMS: 'Kurasi bahan', img: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80' },
-  { titleEN: 'Light Colour Bedroom', titleMS: 'Bilik Tidur Warna Lembut', typeEN: 'Bedroom', typeMS: 'Bilik tidur', img: 'https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=1200&q=80' },
-  { titleEN: 'Texture-Led Dining', titleMS: 'Ruang Makan Bertekstur', typeEN: 'Dining', typeMS: 'Ruang makan', img: 'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=1200&q=80' },
-  { titleEN: 'Compact Study Alcove', titleMS: 'Alkov Belajar Padat', typeEN: 'Work nook', typeMS: 'Sudut kerja', img: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=1200&q=80' },
+  { titleEN: 'Wangsa Melawati Condo', titleMS: 'Kondominium Wangsa Melawati', typeEN: 'Small-space living', typeMS: 'Ruang kecil', img: 'images/p1.jpg' },
+  { titleEN: 'Raw Material Kitchen', titleMS: 'Dapur Bahan Mentah', typeEN: 'Material curation', typeMS: 'Kurasi bahan', img: 'images/p2.jpg' },
+  { titleEN: 'Light Colour Bedroom', titleMS: 'Bilik Tidur Warna Lembut', typeEN: 'Bedroom', typeMS: 'Bilik tidur', img: 'images/p3.jpg' },
+  { titleEN: 'Texture-Led Dining', titleMS: 'Ruang Makan Bertekstur', typeEN: 'Dining', typeMS: 'Ruang makan', img: 'images/p4.jpg' },
+  { titleEN: 'Compact Study Alcove', titleMS: 'Alkov Belajar Padat', typeEN: 'Work nook', typeMS: 'Sudut kerja', img: 'images/p5.jpg' },
 ]
 
 export const dict = {
@@ -45,7 +46,7 @@ export const dict = {
     contact_phone: 'Call', contact_wa: 'WhatsApp', contact_map: 'Maps', contact_tt: 'TikTok',
     footer_pitch: 'Website concept prepared for this studio. Not an official site yet — open to making it yours.',
     footer_pitch_cta: 'Message mr.bagowabair', footer_copy: '© uncommonspace MY · Concept site',
-    lang_en: 'EN', lang_ms: 'BM',
+    lang_en: 'EN', lang_ms: 'BM', menu_open: 'Menu', menu_close: 'Close',
   },
   ms: {
     nav_about: 'Tentang', nav_services: 'Perkhidmatan', nav_work: 'Ruang', nav_process: 'Cara', nav_contact: 'Lawat', nav_cta: 'Tempah runding',
@@ -79,6 +80,6 @@ export const dict = {
     contact_phone: 'Telefon', contact_wa: 'WhatsApp', contact_map: 'Maps', contact_tt: 'TikTok',
     footer_pitch: 'Konsep laman web disediakan untuk studio ini. Bukan laman rasmi lagi — sedia dijadikan milik anda.',
     footer_pitch_cta: 'Mesej mr.bagowabair', footer_copy: '© uncommonspace MY · Laman konsep',
-    lang_en: 'EN', lang_ms: 'BM',
+    lang_en: 'EN', lang_ms: 'BM', menu_open: 'Menu', menu_close: 'Tutup',
   },
 } as const
